@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-royal: 'Cinzel', serif;
+
+  --color-ivory-50: #FFFDF9;
+  --color-ivory-100: #FDFBF7;
+  --color-ivory-200: #F5EFEB;
+  --color-ivory-300: #EADBCE;
+  
+  --color-maroon-900: #4A0814;
+  --color-maroon-800: #5B0E1E;
+  --color-maroon-700: #800020;
+  --color-maroon-600: #9B1B30;
+  --color-maroon-500: #BA223D;
+  --color-maroon-100: #FCE8EC;
+  --color-maroon-50: #FFF1F3;
+
+  --color-gold-900: #6B4E12;
+  --color-gold-800: #8A6417;
+  --color-gold-700: #A87D21;
+  --color-gold-600: #C5A059;
+  --color-gold-500: #D4AF37;
+  --color-gold-400: #E5C365;
+  --color-gold-200: #F4E5BD;
+  --color-gold-100: #FAF3E1;
+  --color-gold-50: #FDFBF4;
+
+  --color-charcoal-900: #18181B;
+  --color-charcoal-800: #27272A;
+  --color-charcoal-700: #3F3F46;
+  --color-charcoal-600: #52525B;
+  --color-charcoal-500: #71717A;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+  
+  body {
+    background-color: #FDFBF7;
+    color: #27272A;
+    overflow-x: hidden;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-royal {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EFEB;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #800020;
+}
+
+/* Gold shimmer subtle effect */
+.gold-shimmer {
+  background: linear-gradient(135deg, #A87D21 0%, #D4AF37 50%, #A87D21 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Subtle Indian rangoli/mandala pattern background */
+.bg-mandala {
+  background-image: radial-gradient(#C5A059 0.75px, transparent 0.75px), radial-gradient(#800020 0.75px, #FDFBF7 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  background-opacity: 0.05;
+}
