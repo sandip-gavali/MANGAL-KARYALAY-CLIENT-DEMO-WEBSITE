@@ -221,3 +221,6 @@ Before final commercial business launch:
 3. **Payment Gateway**: Integrate Razorpay or Cashfree to collect advance token payments (e.g. ₹10,000 to ₹25,000) online.
 4. **Automated SMS & WhatsApp Alerts**: Connect to WhatsApp Business API (Twilio or Wati) to send automated booking confirmations and muhurta reminders to customers.
 5. **Client Photography**: Replace the demo venue photos with high-resolution photography from the venue owner's actual facility.
+#   M A N G A L - K A R Y A L A Y - C L I E N T - D E M O - W E B S I T E  
+ #   M A N G A L - K A R Y A L A Y - C L I E N T - D E M O - W E B S I T E  
+ 
